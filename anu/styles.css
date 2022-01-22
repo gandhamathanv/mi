@@ -1,26 +1,33 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 header {
-  text-align: center;
+    text-align: center;
 }
+
 body {
-  width: auto;
+    width: auto;
 }
+
 .img-prf {
-  height: 300px;
-  width: 300px;
+    width: 100%;
+    height: auto;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-around;
-  margin-top: 20px;
-  margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    margin-top: 20px;
+    margin: auto;
+    gap: 4rem;
+    row-gap: 5rem;
 }
+
 .container-div {
-  justify-items: center;
+    max-width: 120rem;
+    text-align: center;
 }
