@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>head page</title>
     <style>
-        header{
-            font-family:Georgia, 'Times New Roman', Times, serif;
+        
+        .containerh1{
+          font-family:Georgia, 'Times New Roman', Times, serif;
             text-align: center;
+          background-color:rgba(253, 251, 251, 0.5); 
+          text-align: center;
+          font-size: 40px;
         }
         h2{
           font-family:'Times New Roman', Times, serif;
@@ -31,6 +35,7 @@
             height:auto;
             width: 250px;
         }
+        
         .flex-container1{
             display:flex;
             flex-direction: row;
@@ -90,7 +95,7 @@ div.logo{
   height :180px;
 }
 div.logo:hover{
-  border: 1px solid rgb(119, 116, 116);
+  border: 1px solid rgb(252, 248, 248);
 } 
 div.logo img{
   width: auto;
@@ -112,13 +117,42 @@ div.heading{
   font-size:xx-large;
   text-shadow: cornsilk;
 }
+.flex-container2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.header1.content{
+  background-color:rgba(253, 251, 251, 0.5); 
+  position: absolute;
+  text-align: center;
+   }
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
     </style>
 </head>
 <body>
     <header>
-     <h1>KONGU ENGINEERING COLLEGE</h1>
-        <h3>Perundurai,ERODE.</h3>
-        <br>
+      
+              <div class="header1" style="width:30%">
+      </div>
+      
+        <section>
+          <div class="content" id="myHeader">   
+              <h1 class="containerh1">KONGU ENGINEERING COLLEGE <br>Perundurai,ERODE.</h1>
+              
+              
+        </div>
        </header>
        <section >
       
@@ -139,19 +173,30 @@ div.heading{
             <a target="_blank" img src="cse.jfif" >
            <img src="cse.jfif" alt="cselogo" style="width:100%" class="image-logo">
            </a>
-            <strong><div class="desc">CLASS DETAILS</div></strong>
+            <div class="desc"><strong> CLASS DETAILS</strong></div>
           </div>
           <div class="logo">
             <a target="_blank" img src="it.jfif" >
             <img src="it.jfif" alt="itlogo" style="width:100%" class="image-logo">
             </a>
-           <strong><div class="desc">CLASS DETAILS</div></strong>
+       <div class="desc"> <strong>CLASS DETAILS</strong></div>
           </div>
         </div>
-
-         
-
-         </section>
+              </section>
+              <script>
+                window.onscroll = function() {myFunction()};
+                
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                  } else {
+                    header.classList.remove("sticky");
+                  }
+                }
+                </script>
 </body>
       
 
