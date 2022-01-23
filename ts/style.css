@@ -1,0 +1,169 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing:small;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing:small;
+}
+
+body {
+  padding: 15rem 15rem 15rem;
+  line-height:small ;
+  font-family: 'Nunito Sans', sans-serif;
+  color: rgb(27, 23, 23);
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #043453, #e300b2);
+}
+
+h1 {
+  margin: bottom 10px;
+  border-top: double;
+  font-family: 'Megrim', sans-serif;
+  font-size: 5rem;
+  color: white;
+ /* transform: skewY(-5deg); */
+  text-align: center;
+  position: top;
+  word-spacing: 3px;
+}
+.title-head{
+  background-color: black;
+  border-bottom: 5px;
+  font-size:6rem;
+}
+.title-SH{
+  font-size: 4rem;
+}
+
+h1::before {
+  content: '';
+  display:blonde-woman ;
+  height: 55%;
+  width: 49%;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  background: linear-gradient(to bottom, #043453, #e300b2);
+  opacity: 1.8;
+  z-index: -1;
+  transform: skewY(370deg) translate(-50%, -50%);
+}
+
+.title {
+  width: 85rem;
+  margin: 0 auto;
+}
+
+.info-box {
+  margin-top: 7rem;
+}
+
+.info{
+  background: white;
+  box-shadow: 0 2rem 6rem 1rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 5rem;
+  transform: skewX(-20deg);
+  display: flex;
+  transition: all 0.5s;
+}
+
+.info-emoji {
+  font-size: 5.5rem;
+  line-height: 0.2;
+  padding: 1.5rem 6rem 0.5rem 1.5rem;
+  letter-spacing: -4rem;
+  transform: skewX(20deg);
+}
+
+.detail-box{
+  background: linear-gradient(to bottom, #f5f8fa, #dbd2d8);
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.stu_name {
+  font-family: 'Megrim', sans-serif;
+  color: rgb(19, 17, 17);
+  font-size: 2.25rem;
+  transform: skewX(20deg);
+}
+
+.sub {
+  display: flex;
+}
+
+.sub-box {
+  align-self: stretch;
+  border-right: 1px solid rgb(32, 28, 28);
+  display: flex;
+  align-items: center;
+}
+
+.sub-box:last-child {
+  border: none;
+}
+
+.rollno{
+  font-weight: 400;
+  font-size: 1.8rem;
+  transform: skewX(20deg);
+  padding: 1.75rem;
+}
+.rollno--20CSR{
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size:normal;
+  background-image: linear-gradient(to right,#12140f, #7ae2ca);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.stu_link:link,
+.stu_link:visited {
+  flex: 0 0 auto;
+  background-color: #4e1b07;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.stu_link:hover,
+.stu_link:active {
+  background-color: #ebc4a0;
+}
+
+.stu_link span {
+  transform: skewX(20deg);
+}
+
+.info:hover {
+  transform: skewX(-10deg) scale(1.05);
+  box-shadow: 0 3rem 5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.emoji-pen {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.not-20CSR {
+  display: none;
+}
+
