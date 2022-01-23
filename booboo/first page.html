@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>head page</title>
+    <style>
+        h1,
+        h2{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+        img{
+            align-items: center;
+        }
+        header{
+            background-image: url("itpark.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            text-align: center;
+
+        }
+        .image-logo{
+            height:auto;
+            width: 250px;
+        }
+        .flex-container{
+            display:flex;
+            flex-direction: row;
+            background-color: white;
+            justify-content: space-around;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        .container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.3;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+.cselogo{
+    background-position: center;
+}
+.itlogo{
+    background-position: center;
+}
+       
+       
+    </style>
+</head>
+<body>
+    <header>
+     <h1>KONGU ENGINEERING COLLEGE</h1>
+        <h2>Perundurai,ERODE.</h2>
+        <br>
+       </header>
+       <section >
+      
+        <div class="flex-container">
+        
+              <img src="logo1.png" alt="logo 1"class="image-logo">
+                    
+              <img src="logo2.png" alt="logo 2"class="image-logo"  >
+        
+              <img src="logo3.png" alt="logo 3"class="image-logo" >
+          
+          </div>
+          </section>
+<section>
+  <div class="flex-container">
+          <div class="container">
+            <img src="cse.jfif" alt="cselogo" style="width:100%" class="image-logo">
+            <button class="btn">CLASS DETAILS</button>
+          </div>
+          <div class="container">
+            <img src="it.jfif" alt="itlogo" style="width:100%" class="image-logo">
+            <button class="btn">CLASS DETAILS</button>
+          </div>
+</div>
+         </section>
+</body>
+      
+
+</html>
