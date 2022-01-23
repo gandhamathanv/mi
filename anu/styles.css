@@ -34,6 +34,7 @@ body {
   text-align: center;
   font-size: 3ch;
   color: aliceblue;
+  border: 2px black;
 }
 div.desc {
   padding: 15px;
